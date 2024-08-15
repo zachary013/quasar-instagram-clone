@@ -10,7 +10,7 @@
             </q-item-section>
 
             <q-item-section>
-              <q-item-label class="text-bold">zakariae_azarkan</q-item-label>
+              <q-item-label class="text-bold">zakariae_azn</q-item-label>
               <q-item-label caption>
                 {{ post.location }}
               </q-item-label>
@@ -23,7 +23,14 @@
             <div>{{ post.caption }}</div>
             <div class="text-caption text-grey">{{ formatDate(post.date) }}</div>
           </q-card-section>
-        </q-card></div>
+          <q-separator />
+          <q-card-actions align="left">
+            <q-btn flat round dense icon="eva-heart-outline" />
+            <q-btn flat round dense icon="eva-message-circle-outline" />
+            <q-btn flat round dense icon="eva-navigation-2-outline" />
+          </q-card-actions>
+        </q-card>
+      </div>
       <div class="col-4 large-screen-only"><q-item class="fixed">
           <q-item-section avatar>
             <q-avatar size="48px">
@@ -50,9 +57,10 @@ defineOptions({
   name: "PageHome",
 });
 
+
 const posts = ref([
   { id: 1, caption: 'First Post', date: '1722127720909', location: 'Tangier, Morocco', imageURL: 'https://i.pinimg.com/564x/37/f5/aa/37f5aa9f92fce7d0775d3929a00c0757.jpg' },
-  { id: 2, caption: 'Second Post', date: '1722127720909', location: 'Casablanca, Morocco', imageURL: 'https://www.goldenhaven.com.ph/wp-content/uploads/2023/03/nueva-vizcaya-1.jpg' },
+  { id: 2, caption: 'Second Post', date: '1722127720909', location: 'Italy', imageURL: 'https://www.goldenhaven.com.ph/wp-content/uploads/2023/03/nueva-vizcaya-1.jpg' },
   { id: 3, caption: 'Third Post', date: '1722127720909', location: 'Rabat, Morocco', imageURL: 'https://i.pinimg.com/564x/f6/bd/26/f6bd268910f21ce58aa331c5cd4fac80.jpg' }
 ]);
 
@@ -62,8 +70,18 @@ const formatDate = (timestamp) => {
 };
 </script>
 
+
 <style lang="sass">
 .card-post
   .q-img
     min-height: 200px
+
+.post-icons
+  display: flex
+  justify-content: start
+  align-items: center
+
+  q-icon
+    font-size: 24px
+    cursor: pointer
 </style>
