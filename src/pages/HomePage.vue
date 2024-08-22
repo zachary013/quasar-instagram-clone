@@ -59,9 +59,9 @@ defineOptions({
 
 
 const posts = ref([
-  { id: 1, caption: 'First Post', date: '1722127720909', location: 'Tangier, Morocco', imageURL: 'https://i.pinimg.com/564x/37/f5/aa/37f5aa9f92fce7d0775d3929a00c0757.jpg' },
-  { id: 2, caption: 'Second Post', date: '1722127720909', location: 'Italy', imageURL: 'https://www.goldenhaven.com.ph/wp-content/uploads/2023/03/nueva-vizcaya-1.jpg' },
-  { id: 3, caption: 'Third Post', date: '1722127720909', location: 'Rabat, Morocco', imageURL: 'https://i.pinimg.com/564x/f6/bd/26/f6bd268910f21ce58aa331c5cd4fac80.jpg' }
+  { id: 1, caption: 'First Post', date: '1722127720909', location: 'Venice, Italy', imageURL: 'https://i.pinimg.com/564x/37/f5/aa/37f5aa9f92fce7d0775d3929a00c0757.jpg' },
+  { id: 2, caption: 'Second Post', date: '1722127720909', location: 'Greece', imageURL: 'https://www.goldenhaven.com.ph/wp-content/uploads/2023/03/nueva-vizcaya-1.jpg' },
+  { id: 3, caption: 'Third Post', date: '1722127720909', location: 'Warsaw, Poland', imageURL: 'https://i.pinimg.com/564x/f6/bd/26/f6bd268910f21ce58aa331c5cd4fac80.jpg' }
 ]);
 
 const formatDate = (timestamp) => {

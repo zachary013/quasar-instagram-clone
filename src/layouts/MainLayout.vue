@@ -11,7 +11,6 @@
       </q-toolbar>
     </q-header>
 
-
     <q-footer class="bg-white small-screen-only" bordered>
       <q-tabs class="text-grey-10" active-color="primary" indicator-color="transparent">
         <q-route-tab to="/" icon="eva-home-outline" />
@@ -29,12 +28,11 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
 
 defineOptions({
-  name: 'MainLayout'
-})
-
+  name: "MainLayout",
+});
 </script>
 
 <style lang="scss">
@@ -48,7 +46,7 @@ defineOptions({
   font-size: 30px;
 
   @media (max-width: $breakpoint-xs-max) {
-    text-align: center
+    text-align: center;
   }
 }
 
